@@ -1,0 +1,14 @@
+<nav class="navbar navbar-expand-sm nabbg" [ngClass]="{'primaryCls':this.darkLogo==true}">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-brand" *ngIf="this.darkLogo==false"><img src="../../assets/images/logo-white.png" alt=""> </a>
+        <a class="nav-brand" *ngIf="this.darkLogo==true"><img src="../../assets/images/furnome_logo-dark.png" alt=""> </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </nav>

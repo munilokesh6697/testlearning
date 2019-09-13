@@ -1,0 +1,17 @@
+<!-- <app-header></app-header> -->
+<div class="signin">
+    <form [formGroup]="register">
+        <h3>SignIn</h3>
+        <div class="form-group">
+            <label for="">Username</label>
+            <input type="text" class="form-control" name="user_email" formControlName="user_email">
+        </div>
+        <div class="form-group">
+            <label for="">Password</label>
+            <input type="password" class="form-control" name="user_password" formControlName="user_password">
+        </div>
+        <div class="form-group">
+            <button class="form-control" (click)="sbmitForm()">Submit</button>
+        </div>
+    </form>
+</div>

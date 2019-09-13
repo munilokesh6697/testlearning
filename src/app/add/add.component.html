@@ -1,0 +1,53 @@
+<div class="container">
+        <form action="">
+                <div class="row addData">
+                        <div class="col-sm-3 form-group">
+                            <label>Packer Name</label>
+                            <input [(ngModel)]="addPackers.packer_name" name="packer_name" class="form-control" required>
+                            <!-- <div class="validation-error" *ngIf="packer_name.invalid && packer_name.touched">This field is required.</div> -->
+                        </div>
+                        
+                        <div class="col-sm-3 form-group">
+                            <label>Email</label>
+                            <input [(ngModel)]="addPackers.packer_email" name="packer_email" class="form-control" required>
+                            <!-- <div class="validation-error" *ngIf="packer_email.invalid && packer_email.touched">This field is required.</div> -->
+                        </div>
+                        
+                        <div class="col-sm-3 form-group">
+                            <label>Mobile</label>
+                            <input [(ngModel)]="addPackers.packer_mobile" name="packer_mobile" class="form-control">
+                        </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Location From</label>
+                            <input [(ngModel)]="addPackers.packer_location_from"  name="packer_location_from" class="form-control">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Location To</label>
+                            <input [(ngModel)]="addPackers.packer_location_to"  name="packer_location_to" class="form-control">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Contacted Date</label>
+                            <input [(ngModel)]="addPackers.contacted_date" name="contacted_date" class="form-control">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Vehicle No</label>
+                            <input [(ngModel)]="addPackers.VehicleNo" name="VehicleNo" class="form-control">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Vehicle Type</label>
+                            <input [(ngModel)]="addPackers.VehicleType" name="VehicleType" class="form-control">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Driver Name</label>
+                            <input [(ngModel)]="addPackers.DriverName" name="DriverName" class="form-control">
+                            </div>
+                            <div class="col-sm-3 form-group">
+                            <label>Payment</label>
+                            <input [(ngModel)]="addPackers.payment" name="payment" class="form-control">
+                            </div>
+                    </div>
+                    <div class="form-group">
+                        <button (click)="sbmitForm()">Submit</button>
+                    </div>
+        </form>
+</div>

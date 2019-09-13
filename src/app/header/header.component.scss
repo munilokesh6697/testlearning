@@ -1,0 +1,16 @@
+.nabbg{
+    position: absolute;
+    background: #33333357;
+    width: 100%;
+}
+.primaryCls{
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    width: 100%;
+    animation: slideDown;
+    padding: 12px 30px;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0px 1px 20px #e7e7e7;
+    transition: 0.5s;
+}

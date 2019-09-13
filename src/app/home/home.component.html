@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="retrive">
+    <img src="../../assets/images/banner1.jpg" class="bannerImg" alt="">
+    <button routerLink="/add">Add</button>
+    <div class="tableData">
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>Packer Id</th>
+                    <th>Packer Unique By</th>
+                    <th>Packer name</th>
+                    <th>Packer Email</th>
+                    <th>Packer Mobile</th>
+                    <th>Packer Location From</th>
+                    <th>Packer Location To</th>
+                    <th>Contacted Date</th>
+                    <th>Vehicle No</th>
+                    <th>Vehicle Type</th>
+                    <th>Driver Name</th>
+                    <th>Payment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let retrivelist of retrivedatalist">
+                    <td >{{retrivelist.packer_id}}</td>
+                    <td >{{retrivelist.packer_unique_id}}</td>
+                    <td >{{retrivelist.packer_name}}</td>
+                    <td >{{retrivelist.packer_email}}</td>
+                    <td >{{retrivelist.packer_mobile}}</td>
+                    <td >{{retrivelist.packer_location_from}}</td>
+                    <td >{{retrivelist.packer_location_to}}</td>
+                    <td >{{retrivelist.contacted_date}}</td>
+                    <td >{{retrivelist.VehicleNo}}</td>
+                    <td >{{retrivelist.VehicleType}}</td>
+                    <td >{{retrivelist.DriverName}}</td>
+                    <td >{{retrivelist.payment}}</td>
+                    
+                    <td (click) = "deletepacId(retrivelist.packer_id)">Delete</td>
+                    <td ><a routerLink="/edit/{{retrivelist.packer_id}}">Edit</a> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
